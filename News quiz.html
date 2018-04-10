@@ -10,7 +10,7 @@
       <h1>News quiz for April 9, 2018</h1>
 
       <div id="question-1" class="form-group">
-        <label class="control-label">Put your question here</label>
+        <label class="control-label">WHo is the current President of the United States of America</label>
         <input type="text" class="form-control" />
       </div>
 
@@ -28,6 +28,16 @@
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+      //question 1//
+    $('#grade-it').on('click', function() {
+      var presname =$('#question-1 input').val();
+      if( presname == 'Donald Trump' || presname == 'Trump' )
+      {alert('You named the current President YAY!');}
+      else {
+        alert('Nope. "'+ presname +' "is not the current President of the United States.');
+      }
+    });
+
       /* Your JavaScript code goes here */
     </script>
   </body>

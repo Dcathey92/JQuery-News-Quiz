@@ -21,9 +21,9 @@
       <div id="question-2" class="form-group">
         <label class="control-label">Who is the Speaker of the House</label>
         <select class="form-control">
-          <option value="answer-1">Paul Ryan</option>
-          <option value="answer-2">Hillary Clinton</option>
-          <option value="answer-3">Bob Wills</option>
+          <option value="Paul Ryan">Paul Ryan</option>
+          <option value="Hillary Clinton">Hillary Clinton</option>
+          <option value="Bob Wills">Bob Wills</option>
         </select>
       </div>
 
@@ -45,7 +45,18 @@
         $('#question-1').addClass("has-error");;
       }
     });
+//question 2//
+$('#grade-it').on('click', function() {
+  var speaker = $('#question-2 select').val();
+  if( speaker == 'Paul Ryan' )
+  {
+    $('#question-2').addClass("has-success");
+  }
 
+  else {
+    $('#question-2').addClass("has-error");;
+  }
+});
       /* Your JavaScript code goes here */
     </script>
   </body>
